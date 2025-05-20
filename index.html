@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beautiful of Raja Ampat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <video autoplay muted loop poster="waiwo.jpg">
+            <source src="raja ampat.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="logo">Raja Ampat</div>
+        <div class="navbar">
+            <a href="#beach"><i class="fas fa-umbrella-beach"></i> Beach</a>
+            <a href="#description"><i class="fas fa-info-circle"></i> Description</a>
+            <a href="#facts"><i class="fas fa-star"></i> Unique Facts</a>
+            <a href="#hotels"><i class="fas fa-hotel"></i> Hotel Recommendations</a>
+            <a href="#conservation"><i class="fas fa-leaf"></i> Conservation</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <div class="header-content">
+            <h1>The Beautiful<br>of <span class="highlight">Raja Ampat</span></h1>
+        </div>
+    </div>
+    <div class="gradient-transition">
+        <div class="marquee">Discover the Pristine Beauty of Raja Ampat - Dive into Paradise!</div>
+    </div>
+    <div class="content">
+        <div id="beach">
+            <h2 data-aos="fade-up">Explore Raja Ampat Beaches</h2>
+            <div class="beach-section" data-aos="fade-up">
+                <img src="waiwo.jpg" alt="Waiwo Beach">
+                <div>
+                    <h3>Waiwo Beach</h3>
+                    <p>Waiwo Beach is renowned for its powdery white sand and crystal-clear turquoise waters. The vibrant coral reefs make it a snorkeler's paradise, while the serene environment is perfect for relaxing and capturing stunning sunsets. Ideal for those seeking tranquility and natural beauty.</p>
+                </div>
+            </div>
+            <div class="beach-section" data-aos="fade-up">
+                <img src="yeben.jpg" alt="Yeben Beach">
+                <div>
+                    <h3>Yeben Beach</h3>
+                    <p>Yeben Beach, a hidden gem in Raja Ampat, offers a secluded escape with untouched beauty. Its calm waters and rich marine life make it a must-visit for divers and nature enthusiasts looking to explore the underwater wonders of the archipelago.</p>
+                </div>
+            </div>
+            <div class="beach-section" data-aos="fade-up">
+                <img src="arborek.jpg" alt="Arborek Beach">
+                <div>
+                    <h3>Arborek Beach</h3>
+                    <p>Arborek Beach combines natural beauty with cultural charm. The iconic wooden jetty is a favorite for photographers, while the nearby village offers a glimpse into traditional Papuan life. The clear waters are perfect for diving and snorkeling adventures.</p>
+                </div>
+            </div>
+        </div>
+        <div id="description">
+            <h2 data-aos="fade-up" class="typing">About Raja Ampat</h2>
+            <p>Raja Ampat, located in West Papua, Indonesia, is a breathtaking archipelago of over 1,500 islands, cays, and shoals. Known as the heart of the Coral Triangle, it boasts unparalleled marine biodiversity, hosting 75% of the world's coral species and over 1,700 fish species. From vibrant reefs to lush karst islands, Raja Ampat is a haven for divers, adventurers, and nature lovers seeking an unforgettable experience.</p>
+        </div>
+        <div id="facts">
+            <h2 data-aos="fade-up" class="typing">Unique Facts</h2>
+            <ul>
+                <li>Raja Ampat comprises over 1,500 islands, many untouched by human development.</li>
+                <li>It is home to 75% of global coral species, making it a biodiversity hotspot.</li>
+                <li>Unique species like the epaulette shark, which walks on the ocean floor, thrive here.</li>
+                <li>Local Papuan communities maintain vibrant traditions, including intricate crafts and dances.</li>
+                <li>The archipelago is a UNESCO Global Geopark candidate due to its geological significance.</li>
+            </ul>
+        </div>
+        <div id="hotels">
+            <h2 data-aos="fade-up" class="typing">Hotel Recommendations</h2>
+            <div class="beach-section" data-aos="fade-up">
+                <img src="p.jpg" alt="Papua Paradise Eco Resort">
+                <div>
+                    <h3>Papua Paradise Eco Resort</h3>
+                    <p>Nestled on Birie Island, this eco-friendly resort offers luxurious overwater bungalows with panoramic views of Raja Ampat’s turquoise waters. Guests enjoy direct access to pristine dive sites, sustainable dining, and a serene environment perfect for relaxation.</p>
+                </div>
+            </div>
+            <div class="beach-section" data-aos="fade-up">
+                <img src="s.jpg" alt="Raja Ampat Dive Lodge">
+                <div>
+                    <h3>Raja Ampat Dive Lodge</h3>
+                    <p>Located on Mansuar Island, this lodge is a diver’s dream, offering comfortable accommodations and guided diving tours to world-class coral reefs. The lodge emphasizes eco-tourism and provides a cozy base for exploring Raja Ampat’s underwater wonders.</p>
+                </div>
+            </div>
+        </div>
+        <div id="conservation">
+            <h2 data-aos="fade-up" class="typing">Conservation Efforts</h2>
+            <p>Raja Ampat is a protected marine area under the Raja Ampat Marine Park Authority, which collaborates with local communities to promote sustainable tourism. Initiatives include coral reef restoration, protection of endangered species like turtles and manta rays, and community-based ecotourism programs to preserve this pristine ecosystem for future generations.</p>
+        </div>
+        <div id="map-section">
+            <h2 data-aos="fade-up" class="typing">Explore Locations</h2>
+            <div id="map" style="height: 300px;"></div>
+        </div>
+    </div>
+    <footer id="contact">
+        <h2 data-aos="fade-up" class="typing">Contact Us</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
