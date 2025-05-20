@@ -20,7 +20,7 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
         window.scrollTo({
-            top: targetElement.offsetTop - 60,
+            top: targetElement.offsetTop - 80,
             behavior: 'smooth'
         });
     });
