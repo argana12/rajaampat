@@ -13,12 +13,12 @@
 </head>
 <body class="font-poppins text-white bg-gradient-to-r from-[#003087] via-[#0077b6] to-[#90e0ef] bg-[length:400%] animate-colorShift">
     <div class="header relative w-full h-screen overflow-hidden">
-        <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover opacity-85">
+        <video autoplay muted loop playsinline preload="auto" poster="waiwo.jpg" class="absolute top-0 left-0 w-full h-full object-contain sm:object-cover opacity-85">
             <source src="raja ampat.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            <img src="waiwo.jpg" alt="Raja Ampat Fallback" class="w-full h-full object-cover">
         </video>
         <div class="logo absolute top-4 left-4 text-3xl sm:text-4xl font-bold text-white drop-shadow-lg z-10">Raja Ampat</div>
-        <div class="navbar absolute top-4 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-md py-2 px-4 rounded-full z-10 flex flex-wrap justify-center items-center gap-2 sm:gap-4 max-w-[90%] w-fit">
+        <div class="navbar absolute top-12 left-4 sm:top-4 sm:left-1/2 sm:-translate-x-1/2 bg-white/10 backdrop-blur-md py-1 px-2 rounded-lg z-10 flex flex-col sm:flex-row justify-center items-center gap-1 sm:gap-4 max-w-[90%] w-fit">
             <a href="#beach" class="text-white text-xs sm:text-sm font-normal hover:text-[#00a8cc] transition-colors"><i class="fas fa-umbrella-beach mr-1"></i>Beach</a>
             <a href="#description" class="text-white text-xs sm:text-sm font-normal hover:text-[#00a8cc] transition-colors"><i class="fas fa-info-circle mr-1"></i>Description</a>
             <a href="#facts" class="text-white text-xs sm:text-sm font-normal hover:text-[#00a8cc] transition-colors"><i class="fas fa-star mr-1"></i>Unique Facts</a>
